@@ -1,0 +1,65 @@
+-- create a table
+CREATE TABLE historia (
+  ano INT,
+  eventos VARCHAR(250) NOT NULL,
+  localidade VARCHAR(30) NOT NULL,
+  descricao VARCHAR(255) NOT NULL
+);
+-- insert some values
+INSERT INTO historia VALUES (1945,'bomba de hiroshima', 'Japao', 'tacaro bomba');
+INSERT INTO historia VALUES (2020,'pandemia', 'mundial', 'morreu gente');
+INSERT INTO historia VALUES (2023 ,'plaza caiu','osasco', 'estacionamento desabou');
+INSERT INTO historia VALUES (2022 ,'copa do mundo','qatar','campeonato de futebol');
+INSERT INTO historia VALUES (2019,'fogo na floresta', 'brasil', 'pegou fogo na amazonia');
+-- fetch some values 
+
+SELECT * FROM historia WHERE ano= '2023';
+
+-- create a table
+CREATE TABLE geografia (
+  ano INT,
+  eventos VARCHAR(250) NOT NULL,
+  localidade VARCHAR(1930) NOT NULL,
+  descricao VARCHAR(255) NOT NULL
+);
+-- insert some values
+INSERT INTO geografia VALUES (1964,'ditadura militar', 'brasil', 'uso extremo dos militares');
+INSERT INTO geografia VALUES (1930,'era vargas', 'brasil', 'camaleao politico');
+INSERT INTO geografia VALUES (1974,'guerra fria','estados unidos e uniao sovietica', 'conflito politico');
+INSERT INTO geografia VALUES (1991,'fim da uniao sovietica','russia','golpe de parido comunista');
+INSERT INTO geografia VALUES (2004,'tsunami na asia', 'asia', 'muitas mortes');
+-- fetch some values 
+
+SELECT * FROM geografia WHERE ano= '1930';
+
+-- create a table
+CREATE TABLE quimica (
+  ano INT (4),
+  eventos VARCHAR(250) NOT NULL,
+  localidade CHAR(30) NOT NULL,
+  descricao VARCHAR(255) NOT NULL
+);
+-- insert some values
+INSERT INTO quimica VALUES (1869, 'tabela periodica', 'russia', 'descoberta de mais elementos na tabela periodica.');
+INSERT INTO quimica VALUES (1778, 'descoberta do oxigenio', 'suecia', 'estudos no mercurio mostrou q existe oxienio.');
+INSERT INTO quimica VALUES (1808, 'modelos atomicos', 'ingles', 'os modelos atômicos são os aspectos estruturais dos átomos que foram apresentados por cientistas na tentativa de compreender melhor o átomo e a sua composição.');
+INSERT INTO quimica VALUES (1811, 'atomos e moleculas', 'italia', 'a combinacao de moleculas e atomos.');
+INSERT INTO quimica VALUES ( 1897, 'eletrons', 'inglaterra', 'descobre que as partículas carregadas negativamente emitida por tubos de raios catódicos são menores do que átomos e parte de todos os átomos.');
+-- fetch some values
+SELECT * FROM quimica WHERE ano = '1811';
+
+-- create a table
+CREATE TABLE biologia (
+  ano INT (4),
+  eventos VARCHAR(250) NOT NULL,
+  localidade CHAR(30) NOT NULL,
+  descricao VARCHAR (255) NOT NULL
+);
+-- insert some values
+INSERT INTO biologia VALUES (1665, 'descoberta das celulas', 'Londres', 'a descoberta da célula teve um impacto muito maior na ciência.');
+INSERT INTO biologia VALUES (1798, 'primeira vacina', 'Inglaterra', '"A primeira vacina surgiu a partir dos estudos realizados pelo médico inglês Edward.');
+INSERT INTO biologia VALUES (1831, 'estudo de diferentes plantas', 'Escocia', 'descoberta do nucleo das plantas.');
+INSERT INTO biologia VALUES (1979, 'fertilizaçao in vitro', 'Inglaterra', 'nascimento do primeiro bebê humano a partir de uma fertilização in vitro.');
+INSERT INTO biologia VALUES (1962, 'descoberta da estrutura do DNA', 'Inglaterra', 'avanço na biologia.');
+-- fetch some values
+SELECT * FROM biologia WHERE ano = '1665';
